@@ -13,7 +13,7 @@ export class dkbvisa extends Bank {
         return transactions
             .filter(transaction => transaction.valutadatum)
             .map(obj => {
-                const amount = parseFloat(obj.betrag.replace(',', '')) || 0;
+                const amount = parseFloat(obj.betrag.replace(',', '.')) || 0;
                 const payee = obj['beschreibung'];
 
                 // Read date as utc (w/out timezone) and convert to js date
