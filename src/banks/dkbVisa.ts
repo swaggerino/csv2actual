@@ -6,7 +6,7 @@ export class dkbvisa extends Bank {
     static description = 'DKBvisa';
 
     static requiredHeaders = [
-        'Umsatz abgerechnet und nicht im Saldo enthalten', 'Wertstellung', 'belegdatum', 'beschreibung', 'betrag', 'Ursprünglicher Betrag',
+        'belegdatum', 'beschreibung', 'betrag',
     ];
 
     static transformTransactions(transactions) {
