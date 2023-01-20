@@ -11,7 +11,7 @@ export class dkbvisa extends Bank {
 
     static transformTransactions(transactions) {
         return transactions
-            .filter(transaction => transaction.valutadatum)
+            .filter(transaction => transaction.belegdatum)
             .map(obj => {
                 const amount = parseFloat(obj.betrag.replace(',', '.')) || 0;
                 const payee = obj['beschreibung'];
