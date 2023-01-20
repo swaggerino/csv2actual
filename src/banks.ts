@@ -11,5 +11,5 @@ export const supportedBanks = {
     'sparkasse-de': SparkasseDe,
     'zkb-de': ZkbDe,
     'neon-en': NeonEn,
-    'DKBvisa': DKBVisa,
+    'DKBvisa': dkbVisa,
 };
